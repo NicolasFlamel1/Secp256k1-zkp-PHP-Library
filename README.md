@@ -10,7 +10,7 @@ composer require nicolasflamel/secp256k1-zkp
 ```
 
 ### Usage
-After a `Secp256k1Zkp` object has been created, it can be used to perform all the secp256k1-zkp functions that this library implements.
+After an `Secp256k1Zkp` object has been created, it can be used to perform all the secp256k1-zkp functions that this library implements.
 
 The following code briefly shows how to use this library. A more complete example is available [here](https://github.com/NicolasFlamel1/Secp256k1-zkp-PHP-Library/tree/master/example).
 ```
@@ -136,7 +136,7 @@ $partialSingleSignerSignature = $secp256k1Zkp->getPartialSingleSignerSignature(h
    * `string`: The combined public key.
    * `FALSE`: Combing public keys failed.
 
-10. Secp256k1-zkp get partial single-signer signature method: `getPartialSingleSignerSignature(string $privateKey, string $message, string $privateNonce, string $publicKey, string $publicNonce): string | FALSE`
+1. Secp256k1-zkp get partial single-signer signature method: `getPartialSingleSignerSignature(string $privateKey, string $message, string $privateNonce, string $publicKey, string $publicNonce): string | FALSE`
 
    This method is used to get the partial single-signer signature for a provided message signed with a provided private key using a provided private nonce, public key, and public nonce and it accepts the following parameters:
    * `string $privateKey`: The private key to use.
