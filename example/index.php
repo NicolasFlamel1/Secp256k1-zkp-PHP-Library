@@ -172,5 +172,23 @@ else {
 	echo "Partial single-signer signature: " . bin2hex($partialSingleSignerSignature) . PHP_EOL;
 }
 
+// Display message
+echo "Converting public key to commitment" . PHP_EOL;
+
+// Check if converting public key to commitment failed
+$commitment = $secp256k1Zkp->publicKeyToCommitment(hex2bin("02883a3f816419d4ce5bf44e320c24c5b09b0621c70fb780d7a35c86570bd35475"));
+if($commitment === FALSE) {
+
+	// Display message
+	echo "Converting public key to commitment failed" . PHP_EOL;
+}
+
+// Otherwise
+else {
+
+	// Display message
+	echo "Commitment: " . bin2hex($commitment) . PHP_EOL;
+}
+
 
 ?>

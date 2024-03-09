@@ -26,4 +26,6 @@ Combining public keys
 Combined public key: 02fa0b2a4aa3bec764d895f2ac631b7c91ac3696847d08fa1b5ce51aa9df8c1a3e
 Getting partial single-signer signature
 Partial single-signer signature: ee7c6c4b5267b2cf44260d3a74ea9784ef35b58f3be0b264e61cc7ecfaccfbfdbb831796c73472fed939fe197cd3a091e394b8347de4e020471f085361b58a42
+Converting public key to commitment
+Commitment: 08883a3f816419d4ce5bf44e320c24c5b09b0621c70fb780d7a35c86570bd35475
 ```

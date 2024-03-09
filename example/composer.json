@@ -1,5 +1,5 @@
 {
 	"require": {
-		"nicolasflamel/secp256k1-zkp": "^0.1.0"
+		"nicolasflamel/secp256k1-zkp": "^0.1.1"
 	}
 }
