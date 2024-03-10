@@ -82,10 +82,10 @@ $commitment = $secp256k1Zkp->publicKeyToCommitment(hex2bin("02883a3f816419d4ce5b
    * `string`: The private key's public key.
    * `FALSE`: Getting the public key failed.
 
-4. Secp256k1-zkp add private keys method: `addPrivateKeys(string $firstPrivateKey, string $secondPrivateKey): bool`
+4. Secp256k1-zkp add private keys method: `addPrivateKeys(string &$firstPrivateKey, string $secondPrivateKey): bool`
 
    This method is used to add two private keys and it accepts the following parameters:
-   * `string $firstPrivateKey`: The private key to add the second private key to. This variable will contain the sum of the private keys if the function returned `TRUE`.
+   * `string &$firstPrivateKey`: The private key to add the second private key to. This variable will contain the sum of the private keys if the function returned `TRUE`.
    * `string $secondPrivateKey`: The private key to add to the first private key.
 
    This method returns the following values:

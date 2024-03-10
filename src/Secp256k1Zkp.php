@@ -182,7 +182,7 @@ final class Secp256k1Zkp {
 	}
 	
 	// Add private keys
-	public function addPrivateKeys(string $firstPrivateKey, string $secondPrivateKey): bool {
+	public function addPrivateKeys(string &$firstPrivateKey, string $secondPrivateKey): bool {
 	
 		// Check if first private key or second private key are invalid
 		if(strlen($firstPrivateKey) < $this->library->PRIVATE_KEY_SIZE || strlen($secondPrivateKey) < $this->library->PRIVATE_KEY_SIZE) {
